@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campus Classroom Availability Finder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Campus Classroom Availability Finder</h1>
+<p>Find suitable classrooms and labs by time and facilities.</p>
+</header>
+
+<main>
+<section class="card">
+<h2>Find a Room</h2>
+<div class="filters">
+<select id="day">
+<option value="">Any Day</option>
+<option>Monday</option><option>Tuesday</option><option>Wednesday</option>
+<option>Thursday</option><option>Friday</option>
+</select>
+
+<select id="time">
+<option value="">Any Time</option>
+<option>09:00</option><option>10:00</option><option>11:00</option>
+<option>12:00</option><option>13:00</option><option>14:00</option>
+<option>15:00</option><option>16:00</option>
+</select>
+
+<input id="capacity" type="number" min="1" placeholder="Minimum capacity">
+
+<select id="facility">
+<option value="">Any Facility</option>
+<option>Projector</option>
+<option>Computer</option>
+<option>Air Conditioning</option>
+<option>Smart Board</option>
+</select>
+</div>
+</section>
+
+<section>
+<h2>Available Rooms</h2>
+<div id="rooms" class="grid"></div>
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

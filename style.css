@@ -1,0 +1,13 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#202938}
+header{background:#315c72;color:white;text-align:center;padding:36px 20px}
+main{width:min(1050px,92%);margin:30px auto}
+.card,.room{background:white;padding:22px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,.07)}
+.filters{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+input,select{padding:12px;border:1px solid #ccd3dc;border-radius:7px;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
+.room h3{margin-top:0}
+.facility{display:inline-block;background:#e7f0f5;padding:5px 8px;border-radius:15px;margin:3px;font-size:12px}
+.available{color:#27734d;font-weight:bold}
+@media(max-width:750px){.filters{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.filters{grid-template-columns:1fr}}
